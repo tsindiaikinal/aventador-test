@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper-bg {
+	max-width: 2560px;
+	height: 1600px;
+	background: #2a2a2a;
+	
+}
+
+.container {
+	max-width: 885px;
+	margin: auto;
+	/*display: flex;*/
+}
+
+header {
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	    -webkit-align-items: center;
+	            align-items: center;
+	width: 100%;
+	height: 165px;
+}
+
+.logo {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	background-color: #516e6a;
+}
+
+.menu__item,
+.social-nets__item {
+	display: inline-block;
+	list-style: none;
+}
+
+.logo-text {
+	color: #fff;
+}
+
+.menu__link {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.fa-vk,
+.fa-facebook,
+.fa-odnoklassniki,
+.fa-twitter {
+	width: 25px;
+	height: 25px;
+	-webkit-border-radius: 2px;
+	        border-radius: 2px;
+	line-height: 25px;
+	text-align: center;
+	color: #fff;
+}
+
+.fa-vk {
+	background-color: #48729e;
+}
+
+.fa-facebook {
+	background-color: #3b5998;
+}
+
+.fa-odnoklassniki {
+	background-color: #eb722e;
+}
+
+.fa-twitter {
+	background-color: #00aced;
+}
+
+.copyright {
+	border: 1px solid white;
+	color: #8e8470;
+}
