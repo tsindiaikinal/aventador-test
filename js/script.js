@@ -2,9 +2,11 @@ $('document').ready( function () {
 	// body...
 	$('.chapter__8').css({
 		'border': '1px solid red',
-		'width': '100px',
-		'height': '50px'
+		'width': '',
+		'height': ''
 	});
+
+	$('#slider').slick({});
 
 	var linkSocial = $('.social-nets__link');
 	console.log(linkSocial[0].href);
@@ -99,20 +101,6 @@ $('document').ready( function () {
             + '&p[images][0]=' + encodeURIComponent(options.image);
     },
   
-    // Живой Журнал
-    lj: function(_options) {
-        var options = $.extend({
-                url:    location.href,
-                title:  document.title,
-                text:   '',
-            }, _options);
-  
-        return 'http://livejournal.com/update.bml?'
-            + 'subject='        + encodeURIComponent(options.title)
-            + '&event='         + encodeURIComponent(options.text + '<br/><a href="' + options.url + '">' + options.title + '</a>')
-            + '&transform=1';
-    },
-  
     // Твиттер
     tw: function(_options) {
         var options = $.extend({
@@ -125,32 +113,6 @@ $('document').ready( function () {
             + 'text='      + encodeURIComponent(options.title)
             + '&url='      + encodeURIComponent(options.url)
             + '&counturl=' + encodeURIComponent(options.count_url);
-    },
-  
-// Google+
-    gg: function (_options) {
-        var options = $.extend({
-            url: location.href          
-        }, _options);
-  
-        return ''
-            + encodeURIComponent(options.url);
-    },
-  
-    // Mail.Ru
-    mr: function(_options) {
-        var options = $.extend({
-                url:    location.href,
-                title:  document.title,
-                image:  '',
-                text:   '',
-            }, _options);
-  
-        return 'http://connect.mail.ru/share?'
-            + 'url='          + encodeURIComponent(options.url)
-            + '&title='       + encodeURIComponent(options.title)
-            + '&description=' + encodeURIComponent(options.text)
-            + '&imageurl='    + encodeURIComponent(options.image);
     },
   
     // Открыть окно шаринга
