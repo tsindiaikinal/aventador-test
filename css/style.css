@@ -170,6 +170,7 @@ header {
 
 .container-blocks {
 	display: flex;
+
 }
 
 .block-3 {
@@ -180,7 +181,15 @@ header {
 }
 
 .block-4 {
+	/*display: flex;*/
+	/*-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;*/
+	/*-webkit-align-items: center;
+	        align-items: center;*/
 	
+	    /*-webkit-flex-wrap: wrap;
+	            flex-wrap: wrap;*/
 }
 
 .videoblock {
@@ -205,10 +214,15 @@ header {
 }
 
 .chapter-6 {
-	display: inline-block;
-	-webkit-order: 2;
-	    -ms-order: 2;
-	        order: 2;
+	/*display: inline-block;*/
+	
+}
+
+div[data-block="chapter-6 chapter-8"] {
+	/*display: inline-block;*/
+	width: 220px;
+	max-height: 660px;
+	    border: 1px solid green;
 }
 
 .chapter-3,
@@ -233,11 +247,12 @@ header {
 
 
 .chapter-8 {
+	display: flex;
 	width: 445px;
 	height: 225px;
-	-webkit-box-sizing: border-box;
+	/*-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+	        box-sizing: border-box;*/
 	border: 3px dashed black;
 }
 	.chapter-8__text-block {
@@ -267,6 +282,23 @@ header {
 	/*text-decoration: none;*/
 }
 /*---------------------------end-------------------------------*/
+
+/*-------------------------- ...etc СЕКЦИИ -------------------*/
+.touch-their-chapter-5-6 {
+	display: flex;
+}
+
+.touch-their {
+	/*height: 220px;*/
+}
+
+.videoblock-chapter-8__text-block-2 {
+	/*width: 440px;
+	height: 220px;*/
+	display: flex;
+}
+
+/*--------------------------- end ----------------------------*/
 
 #star {
 	fill: #2a2a2a;
