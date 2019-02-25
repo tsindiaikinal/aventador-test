@@ -22,11 +22,9 @@ $('document').ready( function () {
      * @param Object _options - опции, все необязательны
      */
     go: function(_element, _options) {
-        var
-            self = Share,
+        var self = Share,
             options = $.extend(
-                {
-                    type:       'vk',    // тип соцсети
+                {   // тип соцсети
                     url:        location.href,  // какую ссылку шарим
                     count_url:  location.href,  // для какой ссылки крутим счётчик
                     title:      document.title, // заголовок шаринга
@@ -85,7 +83,7 @@ $('document').ready( function () {
             + '&st._surl='    + encodeURIComponent(options.url);
     },
   
-    // Facebook
+    //Facebook
     fb: function(_options) {
         var options = $.extend({
                 url:    location.href,
@@ -124,3 +122,11 @@ $('document').ready( function () {
     Share.go(this);
 	});
 });
+
+// (function(d, s, id) {
+//     var js, fjs = d.getElementsByTagName(s)[0];
+//     if (d.getElementById(id)) return;
+//     js = d.createElement(s); js.id = id;
+//     js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+//     fjs.parentNode.insertBefore(js, fjs);
+//   }(document, 'script', 'facebook-jssdk'));
