@@ -359,7 +359,7 @@ header {
 	.chapter-6__text2::before,
 	.chapter-6__text3::before,
 	.chapter-7__text2::before {
-		content: '⏤';
+		content: '—';
 		position: absolute;
 		left: -14px;
 		font-weight: bold;
@@ -421,7 +421,7 @@ header {
 		        box-sizing: border-box;
 	}
 	.social-nets {
-		width: 120px;
+		width: 115px;
 		height: 50px;
 		margin: auto;
 	}
