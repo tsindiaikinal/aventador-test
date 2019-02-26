@@ -6,7 +6,11 @@ $('document').ready( function () {
 		'height': ''
 	});
 
-	$('#slider').slick({});
+	$('#slider').slick({
+        prevArrow: '<button type="button" class="slick-prev slider-arrows__prew"></button>',
+
+        nextArrow: '<button type="button" class="slick-next slider-arrows__next"></button>'
+});
 
 	var linkSocial = $('.social-nets__link');
 	console.log(linkSocial[0].href);
