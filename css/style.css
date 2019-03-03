@@ -127,9 +127,10 @@ header {
 }
 
 .logo-text {
+  padding-left: 72%;
   color: #fff;
   font-size: 0.75rem;
-  line-height: 3.735;
+  line-height: 60px;
   text-align: left;
 }
 
