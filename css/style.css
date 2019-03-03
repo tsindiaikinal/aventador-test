@@ -133,11 +133,35 @@ header {
   text-align: left;
 }
 
+.menu__item {
+  width: 90px;
+  height: 35px;
+}
+
 .menu__link {
+  display: block;
+  width: 90px;
   font-size: 0.75rem;
-  line-height: 3.735;
-  text-align: left;
+  line-height: 35px;
+  text-align: center;
   color: #fff;
+}
+
+.active {
+  background-color: #516e6a;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  margin-top: 35px;
+  margin-left: -13px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #516e6a;
+}
+
+.menu__item:hover {
+  background-color: #516e6a;
 }
 
 .container-slider {
