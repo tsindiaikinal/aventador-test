@@ -136,10 +136,13 @@ header {
 .menu {
   width: 405px;
   height: 35px;
-  padding-right: 5.6497175141%;
+  padding-right: 12.3456790123%;
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .menu__item {
