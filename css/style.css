@@ -133,6 +133,15 @@ header {
   text-align: left;
 }
 
+.menu {
+	width: 405px;
+	height: 35px;
+	padding-right: (50 / 885) * 100%;
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+
 .menu__item {
   width: 90px;
   height: 35px;
