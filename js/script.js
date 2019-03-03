@@ -1,10 +1,14 @@
 $('document').ready( function () {
 	// body...
-	$('.chapter__8').css({
-		'border': '1px solid red',
-		'width': '',
-		'height': ''
-	});
+	var activeElem = document.querySelectorAll('.menu a'); // выбираем все ссылки в нашем меню
+// и прогоняем через цикл
+
+for(i=0; i<activeElem.length; i++){ 
+// если значение атрибута совпадает с урлом в браузере то
+    if(activeElem[i].href==window.location){
+        activeElem[i].classList="active menu__link"; // добавляем нужный класс для выделения пункта
+    }
+}
 
 	$('#slider').slick({
         prevArrow: '<button type="button" class="slick-prev slider-arrows__prew"></button>',
