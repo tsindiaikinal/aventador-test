@@ -1,5 +1,6 @@
 $('document').ready( function () {
 	// body...
+<<<<<<< HEAD
    //  var menuId = document.getElementById('menu');
    // var menuItem = menuId.getElementsByTagName('li');
    // console.log(menuItem);
@@ -11,6 +12,9 @@ $('document').ready( function () {
    //     var classHas = eventClickLink.classList.contains('active');
    //     var mouseRemoveItem = document.querySelectorAll('.menu li');
    var activeElem = document.querySelectorAll('.menu a'); // выбираем все ссылки в нашем меню
+=======
+	var activeElem = document.querySelectorAll('.menu a'); // выбираем все ссылки в нашем меню
+>>>>>>> c5f672626b630baaac982269c5d950055876057c
 // и прогоняем через цикл
 
 for(i=0; i<activeElem.length; i++){ 
@@ -19,6 +23,7 @@ for(i=0; i<activeElem.length; i++){
         activeElem[i].classList="active menu__link"; // добавляем нужный класс для выделения пункта
     }
 }
+<<<<<<< HEAD
     var chapter2 = document.querySelectorAll('.chapter-2 p');
     for (var i = 0; i < chapter2.length; i++) {
 
@@ -43,6 +48,8 @@ for(i=0; i<activeElem.length; i++){
        // }
        // menuLink.event.target.classList.toggle('active');
     // };
+=======
+>>>>>>> c5f672626b630baaac982269c5d950055876057c
 
 	$('#slider').slick({
         prevArrow: '<button type="button" class="slick-prev slider-arrows__prew"></button>',
