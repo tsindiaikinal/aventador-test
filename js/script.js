@@ -1,10 +1,48 @@
 $('document').ready( function () {
 	// body...
-	$('.chapter__8').css({
-		'border': '1px solid red',
-		'width': '',
-		'height': ''
-	});
+   //  var menuId = document.getElementById('menu');
+   // var menuItem = menuId.getElementsByTagName('li');
+   // console.log(menuItem);
+   //  menuId.addEventListener('click', menuActive);
+   //   function menuActive(event) {
+   //     var menuLink = document.querySelector('.menu__link');
+   //     console.log(event.target);
+   //     var eventClickLink = event.target;
+   //     var classHas = eventClickLink.classList.contains('active');
+   //     var mouseRemoveItem = document.querySelectorAll('.menu li');
+   var activeElem = document.querySelectorAll('.menu a'); // выбираем все ссылки в нашем меню
+// и прогоняем через цикл
+
+for(i=0; i<activeElem.length; i++){ 
+// если значение атрибута совпадает с урлом в браузере то
+    if(activeElem[i].href==window.location){
+        activeElem[i].classList="active menu__link"; // добавляем нужный класс для выделения пункта
+    }
+}
+    var chapter2 = document.querySelectorAll('.chapter-2 p');
+    for (var i = 0; i < chapter2.length; i++) {
+
+    if(screen.height == 1024) {
+        // alert(screen.height);
+        chapter2[i].style.width =  screen.width / 4 + '%';
+        chapter2[i].style.height = '90px';
+        chapter2[i].style.fontSize = '0.7rem';
+        chapter2[i].style.color = 'red';
+    }
+}
+       // if(classHas == false) {
+       //      eventClickLink.classList.add('active');
+       // } else {
+       //      eventClickLink.classList.remove('active');
+       //  }
+       // mouseRemoveItem.mouseout = function(event) {
+       //      var target = event.target;
+       //      if( target == true) {
+       //      eventClickLink.classList.remove('active');
+       //  }
+       // }
+       // menuLink.event.target.classList.toggle('active');
+    // };
 
 	$('#slider').slick({
         prevArrow: '<button type="button" class="slick-prev slider-arrows__prew"></button>',
