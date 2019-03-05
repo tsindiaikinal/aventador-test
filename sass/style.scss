@@ -636,46 +636,46 @@ video
 {
     position: absolute;
     content: '';
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
 }
 
 .chapter-3__text1-bg::after
 {
     left: 219px;
     margin-top: -24%;
-    border-left: 15px solid #6a3b35;
+    border-left: 16px solid #6a3b35;
 }
 
 .chapter-4__text1-bg::after
 {
     left: 219px;
     margin-top: -42%;
-    border-left: 15px solid #514441;
+    border-left: 16px solid #514441;
 }
 
 .chapter-7__text1-bg::after
 {
     left: 219px;
     margin-top: -20px;
-    border-left: 15px solid #40434b;
+    border-left: 16px solid #40434b;
 }
 
 .chapter-8::after
 {
     margin-left: 219px;
-    border-left: 15px solid #414e51;
+    border-left: 16px solid #414e51;
 }
 
 .label-company::before
 {
     position: absolute;
-    margin-left: 206px;
+    margin-left: 205px;
     margin-top: 95px;
     content: '';
-    border-top: 15px solid transparent;
-    border-right: 15px solid #514441;
-    border-bottom: 15px solid transparent;
+    border-top: 16px solid transparent;
+    border-right: 16px solid #514441;
+    border-bottom: 16px solid transparent;
 }
 
 /*---------------------------end-------------------------------*/
