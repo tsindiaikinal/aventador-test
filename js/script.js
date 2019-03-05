@@ -1,5 +1,5 @@
 $('document').ready( function () {
-	// body...
+
 	var activeElem = document.querySelectorAll('.menu a'); // выбираем все ссылки в нашем меню
 // и прогоняем через цикл
 
