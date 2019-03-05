@@ -321,6 +321,23 @@ header {
   width: 220px;
   height: 220px;
 }
+.videoblock__btn-play {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-top: 70px;
+  margin-left: 70px;
+  cursor: pointer;
+  border: 9px solid #333;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.videoblock__btn-play .fa-caret-right {
+  font-size: 48px;
+  line-height: 60px;
+  margin-left: 25px;
+  color: #333;
+}
 
 video {
   width: 100%;
