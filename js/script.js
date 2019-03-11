@@ -15,15 +15,16 @@ $('document').ready( function () {
         });
 
     $('#btn-play').on('click', function() {
-        // alert("I am button play, i working");
         $('#popup').addClass('popup__bg');
+        $('.videoblock').append(videoBlock);
         $('video').addClass('popup-video').css('display', 'block');
         $('#close-video-win').css('display', 'block');
     });
+    var videoBlock = $('video');
     $('#close-video-win').on('click', function() {
-        $('video').detach();
-        $('#popup').removeClass('popup__bg');
         $('#close-video-win').css('display', 'none');
+        videoBlock.detach();
+        $('#popup').removeClass('popup__bg');
     });
 
 	var linkSocial = $('.social-nets__link');
