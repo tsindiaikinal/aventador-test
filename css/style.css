@@ -384,6 +384,8 @@ video {
   right: 25px;
   display: none;
   cursor: pointer;
+  font-size: 2rem;
+  font-weight: lighter;
   color: #fff;
 }
 
