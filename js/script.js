@@ -1,20 +1,30 @@
 $('document').ready( function () {
 
 	var activeElem = document.querySelectorAll('.menu a'); // выбираем все ссылки в нашем меню
-// и прогоняем через цикл
-
-for(i=0; i<activeElem.length; i++){ 
-// если значение атрибута совпадает с урлом в браузере то
-    if(activeElem[i].href==window.location){
+            // и прогоняем через цикл
+    for(i=0; i<activeElem.length; i++){ 
+            // если значение атрибута совпадает с урлом в браузере то
+        if(activeElem[i].href==window.location){
         activeElem[i].classList="active menu__link"; // добавляем нужный класс для выделения пункта
+            }
     }
-}
 
 	$('#slider').slick({
         prevArrow: '<button type="button" class="slick-prev slider-arrows__prew"></button>',
-
         nextArrow: '<button type="button" class="slick-next slider-arrows__next"></button>'
-});
+        });
+
+    $('#btn-play').on('click', function() {
+        // alert("I am button play, i working");
+        $('#popup').addClass('popup__bg');
+        $('video').addClass('popup-video').css('display', 'block');
+        $('#close-video-win').css('display', 'block');
+    });
+    $('#close-video-win').on('click', function() {
+        $('video').detach();
+        $('#popup').removeClass('popup__bg');
+        $('#close-video-win').css('display', 'none');
+    });
 
 	var linkSocial = $('.social-nets__link');
 	console.log(linkSocial[0].href);
