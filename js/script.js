@@ -13,18 +13,24 @@ $('document').ready( function () {
         prevArrow: '<button type="button" class="slick-prev slider-arrows__prew"></button>',
         nextArrow: '<button type="button" class="slick-next slider-arrows__next"></button>'
         });
+    $('#slider').on('click', function() {
+        $('#popup').addClass('popup__bg');
+        $('#close-win').css('display', 'block');
+        $('#slider').addClass('slider--popup');
+    });
 
     $('#btn-play').on('click', function() {
         $('#popup').addClass('popup__bg');
         $('.videoblock').append(videoBlock);
         $('video').addClass('popup-video').css('display', 'block');
-        $('#close-video-win').css('display', 'block');
+        $('#close-win').css('display', 'block');
     });
     var videoBlock = $('video');
-    $('#close-video-win').on('click', function() {
-        $('#close-video-win').css('display', 'none');
+    $('#close-win').on('click', function() {
+        $('#close-win').css('display', 'none');
         videoBlock.detach();
         $('#popup').removeClass('popup__bg');
+        $('#slider').removeClass('slider--popup');
     });
 
 	var linkSocial = $('.social-nets__link');
