@@ -390,6 +390,18 @@ header
 .setting
 {
     background-color: #6a3b35;
+    line-height: 0;
+    div {
+    display: inline-block;
+    width: (120 / 220) * 100%;
+    height: (120 / 220) * 100%;
+    margin: 21.4% auto;
+    text-align: center;
+    line-height: 120px;
+    border: 3px solid #516e6a;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    }
 }
 
 .fa-heart
@@ -399,22 +411,15 @@ header
 
 .fa-cog
 {	
-	display: inline-block;
-    width: 60px;
-    height: 60px;
-    margin: auto;
-    padding: 30px;
     color: #516e6a;
-    border: 3px solid #516e6a;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
 }
 
 .fa-cog:hover {
-	-webkit-animation: cog 1s linear infinite;
-	   -moz-animation: cog 1s linear infinite;
-	     -o-animation: cog 1s linear infinite;
-	        animation: cog 1s linear infinite;
+	color: #FFF;
+	-webkit-animation: cog 3s linear infinite;
+	   -moz-animation: cog 3s linear infinite;
+	     -o-animation: cog 3s linear infinite;
+	        animation: cog 3s linear infinite;
 }
 
 @keyframes cog {
