@@ -385,22 +385,43 @@ header
 .heart
 {
     background-color: #516e6a;
+    -webkit-transition: all 1s;
+       -moz-transition: all 1s;
+        -ms-transition: all 1s;
+         -o-transition: all 1s;
+            transition: all 1s;
+}
+
+.heart:hover {
+	background-color: #2a2a2a;
+	& .fa-heart {
+		color: #6a3b35;
+		}
 }
 
 .setting
 {
-    background-color: #6a3b35;
     line-height: 0;
-    div {
-    display: inline-block;
-    width: (120 / 220) * 100%;
-    height: (120 / 220) * 100%;
-    margin: 21.4% auto;
-    text-align: center;
-    line-height: 120px;
-    border: 3px solid #516e6a;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
+    background-color: #6a3b35;
+    .border-cog
+    {
+        line-height: 120px;
+        display: inline-block;
+        width: (120 / 220) * 100%;
+        height: (120 / 220) * 100%;
+        margin: 21.4% auto;
+        text-align: center;
+        border: 3px solid #516e6a;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+    	-webkit-transition: border-color 1s linear;
+    	   -moz-transition: border-color 1s linear;
+    	    -ms-transition: border-color 1s linear;
+    	     -o-transition: border-color 1s linear;
+    	        transition: border-color 1s linear;
+        &:hover {
+        	border-color: #FFF;
+        }
     }
 }
 
@@ -410,93 +431,137 @@ header
 }
 
 .fa-cog
-{	
+{
     color: #516e6a;
 }
 
-.fa-heart:hover {
-	color: #6a3b35;
-	-webkit-animation: heart 1s ease-out infinite;
-	   -moz-animation: heart 1s ease-out infinite;
-	     -o-animation: heart 1s ease-out infinite;
-	        animation: heart 1s ease-out infinite;
+.fa-heart:hover
+{
+    -webkit-animation: heart 1s ease-out infinite;
+       -moz-animation: heart 1s ease-out infinite;
+         -o-animation: heart 1s ease-out infinite;
+            animation: heart 1s ease-out infinite;
+
+    // color: #6a3b35;
 }
 
-.fa-cog:hover {
-	color: #2a2a2a;
-	-webkit-animation: cog 3s linear infinite;
-	   -moz-animation: cog 3s linear infinite;
-	     -o-animation: cog 3s linear infinite;
-	        animation: cog 3s linear infinite;
+.fa-cog:hover
+{
+    -webkit-animation: cog 3s linear infinite;
+       -moz-animation: cog 3s linear infinite;
+         -o-animation: cog 3s linear infinite;
+            animation: cog 3s linear infinite;
+    color: #2a2a2a;
 }
 
-@keyframes heart {
-	0% {
-	-webkit-transform: scale(1);
-	   -moz-transform: scale(1);
-	    -ms-transform: scale(1);
-	     -o-transform: scale(1);
-	        transform: scale(1);
-	}
-	100% {
-	-webkit-transform: scale(1.5);
-	   -moz-transform: scale(1.5);
-	    -ms-transform: scale(1.5);
-	     -o-transform: scale(1.5);
-	        transform: scale(1.5);
-	}
+@keyframes heart
+{
+    0%
+    {
+        -webkit-transform: scale(1);
+           -moz-transform: scale(1);
+            -ms-transform: scale(1);
+             -o-transform: scale(1);
+                transform: scale(1);
+    }
+    100%
+    {
+        -webkit-transform: scale(1.5);
+           -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+             -o-transform: scale(1.5);
+                transform: scale(1.5);
+    }
 }
 
-@-webkit-keyframes heart {
-	0% {
-	-webkit-transform: scale(1);
-	   -moz-transform: scale(1);
-	    -ms-transform: scale(1);
-	     -o-transform: scale(1);
-	        transform: scale(1);
-	}
-	100% {
-	-webkit-transform: scale(1.5);
-	   -moz-transform: scale(1.5);
-	    -ms-transform: scale(1.5);
-	     -o-transform: scale(1.5);
-	        transform: scale(1.5);
-	}
+@-webkit-keyframes heart
+{
+    0%
+    {
+        -webkit-transform: scale(1);
+           -moz-transform: scale(1);
+            -ms-transform: scale(1);
+             -o-transform: scale(1);
+                transform: scale(1);
+    }
+    100%
+    {
+        -webkit-transform: scale(1.5);
+           -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+             -o-transform: scale(1.5);
+                transform: scale(1.5);
+    }
 }
 
-@keyframes cog {
-	0% {
-	-webkit-transform: rotate(0deg);
-	   -moz-transform: rotate(0deg);
-	    -ms-transform: rotate(0deg);
-	     -o-transform: rotate(0deg);
-	        transform: rotate(0deg);
-	}
-	100% {
-	-webkit-transform: rotate(360deg);
-	   -moz-transform: rotate(360deg);
-	    -ms-transform: rotate(360deg);
-	     -o-transform: rotate(360deg);
-	        transform: rotate(360deg);
-	}
+@keyframes border-cog
+{
+    0%
+    {
+    	
+        border-color: #516e6a;
+    }
+    100%
+    {
+		
+        border-color: #FFF;
+    }
 }
 
-@-webkit-keyframes cog {
-	0% {
-		-webkit-transform: rotate(0deg);
-	   -moz-transform: rotate(0deg);
-	    -ms-transform: rotate(0deg);
-	     -o-transform: rotate(0deg);
-	        transform: rotate(0deg);
-	}
-	100% {
-	-webkit-transform: rotate(360deg);
-	   -moz-transform: rotate(360deg);
-	    -ms-transform: rotate(360deg);
-	     -o-transform: rotate(360deg);
-	        transform: rotate(360deg);
-	}
+@-webkit-keyframes border-cog
+{
+    0%
+    {	
+    	
+        border-color: #516e6a;
+    }
+    100%
+    {
+		
+        border-color: #FFF;
+    }
 }
+
+@keyframes cog
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+           -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+             -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cog
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+           -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+             -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
 
 .block-2
 {

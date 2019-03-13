@@ -316,22 +316,42 @@ header {
 
 .heart {
   background-color: #516e6a;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.heart:hover {
+  background-color: #2a2a2a;
+}
+.heart:hover .fa-heart {
+  color: #6a3b35;
 }
 
 .setting {
-  background-color: #6a3b35;
   line-height: 0;
+  background-color: #6a3b35;
 }
-.setting div {
+.setting .border-cog {
+  line-height: 120px;
   display: inline-block;
   width: 54.5454545455%;
   height: 54.5454545455%;
   margin: 21.4% auto;
   text-align: center;
-  line-height: 120px;
   border: 3px solid #516e6a;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  -webkit-transition: border-color 1s linear;
+  -moz-transition: border-color 1s linear;
+  -ms-transition: border-color 1s linear;
+  -o-transition: border-color 1s linear;
+  transition: border-color 1s linear;
+}
+.setting .border-cog:hover {
+  border-color: #FFF;
 }
 
 .fa-heart {
@@ -343,7 +363,6 @@ header {
 }
 
 .fa-heart:hover {
-  color: #6a3b35;
   -webkit-animation: heart 1s ease-out infinite;
   -moz-animation: heart 1s ease-out infinite;
   -o-animation: heart 1s ease-out infinite;
@@ -351,11 +370,11 @@ header {
 }
 
 .fa-cog:hover {
-  color: #2a2a2a;
   -webkit-animation: cog 3s linear infinite;
   -moz-animation: cog 3s linear infinite;
   -o-animation: cog 3s linear infinite;
   animation: cog 3s linear infinite;
+  color: #2a2a2a;
 }
 
 @keyframes heart {
@@ -388,6 +407,22 @@ header {
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
     transform: scale(1.5);
+  }
+}
+@keyframes border-cog {
+  0% {
+    border-color: #516e6a;
+  }
+  100% {
+    border-color: #FFF;
+  }
+}
+@-webkit-keyframes border-cog {
+  0% {
+    border-color: #516e6a;
+  }
+  100% {
+    border-color: #FFF;
   }
 }
 @keyframes cog {
