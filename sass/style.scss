@@ -414,12 +414,54 @@ header
     color: #516e6a;
 }
 
+.fa-heart:hover {
+	color: #6a3b35;
+	-webkit-animation: heart 1s ease-out infinite;
+	   -moz-animation: heart 1s ease-out infinite;
+	     -o-animation: heart 1s ease-out infinite;
+	        animation: heart 1s ease-out infinite;
+}
+
 .fa-cog:hover {
-	color: #FFF;
+	color: #2a2a2a;
 	-webkit-animation: cog 3s linear infinite;
 	   -moz-animation: cog 3s linear infinite;
 	     -o-animation: cog 3s linear infinite;
 	        animation: cog 3s linear infinite;
+}
+
+@keyframes heart {
+	0% {
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+	}
+	100% {
+	-webkit-transform: scale(1.5);
+	   -moz-transform: scale(1.5);
+	    -ms-transform: scale(1.5);
+	     -o-transform: scale(1.5);
+	        transform: scale(1.5);
+	}
+}
+
+@-webkit-keyframes heart {
+	0% {
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+	}
+	100% {
+	-webkit-transform: scale(1.5);
+	   -moz-transform: scale(1.5);
+	    -ms-transform: scale(1.5);
+	     -o-transform: scale(1.5);
+	        transform: scale(1.5);
+	}
 }
 
 @keyframes cog {
