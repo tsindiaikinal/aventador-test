@@ -232,7 +232,7 @@ header
     {
         position: absolute;
         margin-top: 35px;
-        margin-left: -13px;
+        margin-left: 10px;
         content: '';
         border-top: 7px solid #516e6a;
         border-right: 7px solid transparent;
@@ -441,8 +441,6 @@ header
        -moz-animation: heart 1s ease-out infinite;
          -o-animation: heart 1s ease-out infinite;
             animation: heart 1s ease-out infinite;
-
-    // color: #6a3b35;
 }
 
 .fa-cog:hover

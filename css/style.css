@@ -186,7 +186,7 @@ header {
 .active::before {
   position: absolute;
   margin-top: 35px;
-  margin-left: -13px;
+  margin-left: 10px;
   content: "";
   border-top: 7px solid #516e6a;
   border-right: 7px solid transparent;

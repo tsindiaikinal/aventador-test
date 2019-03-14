@@ -5,8 +5,15 @@ $('document').ready( function () {
     for(i=0; i<activeElem.length; i++){ 
             // если значение атрибута совпадает с урлом в браузере то
         if(activeElem[i].href==window.location){
-        activeElem[i].classList="active menu__link"; // добавляем нужный класс для выделения пункта
-            }
+        activeElem[i].classList="active-item menu__link";// добавляем нужный класс для выделения пункта
+            addActive();
+        }
+    }
+    function addActive() {
+        var activeItem = $('.active-item');
+        // console.log(activeItem);
+        // console.log(activeItem.parent());
+        activeItem.parent().addClass('active');
     }
 
 	$('#slider').slick({
